@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Verificación de Datos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img src="./logo.png" alt="" />
+      </a>
+      <h1 class="titulo">Verificador de Palabras</h1>
+    </header>
+    <section class="main">
+      <div class="ingresar">
+        <article>
+          <h2>Ingrese una palabra</h2>
+          <form>
+            Palabra a ingresar =
+            <input type="text" id="palabra" "/>
+            <button onclick="verificar()" type="button">
+              Verificar
+            </button>
+          </form>
+        </article>
+      </div>
+      <div class="ID">
+        <article>
+          <p>Listado de "ID"</p>
+          <ul>
+                <blockquote id="listado_id"></blockquote>
+          </ul>
+        </article>
+      </div>
+      <div class="numeros">
+        <article>
+          <p>Listado de "numeros"</p>
+          <ul>
+              <blockquote id="listado_numeros"></blockquote>
+          </ul>
+        </article>
+      </div>
+      <div class="simbolos">
+        <article>
+          <p>Listado de "simbolos"</p>
+          <ul>
+                <blockquote id="listado_simbolos"></blockquote>
+          </ul>
+        </article>
+      </div>
+      <div class="errores">
+        <article>
+          <p>ERRORES</p>
+          <ul>
+                <blockquote id="listado_errores"></blockquote>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="./verificacion.js"></script>
+</html>
