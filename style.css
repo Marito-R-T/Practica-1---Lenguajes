@@ -46,8 +46,8 @@ input{
     float: initial;
     width: 40%;
 }
-
-button{
+/*Lo anterior fueron ajustes pequeños a cada clase para asignarle un borde, tamaños de letras, y color de fondo o de letra*/
+button{ /*botones*/
     width: 20%;
     font: 300;
     background: 20px;
@@ -59,12 +59,12 @@ button{
     font-size: 100%;
     float: right;
 }
-div{
+div{   /*divisiones para las listas*/
     position: relative;
     top: 10px;
     
 }
-footer{
+footer{  /*pie de pagina*/
     border: 10px ridge rgb(90, 11, 90);
     margin-top: 50px;
     background-color: rgb(8, 9, 26);
@@ -77,13 +77,13 @@ footer{
     
 
 }
-.ID, .numeros, .simbolos, .errores{
+.ID, .numeros, .simbolos, .errores{ /*los blockquote*/
     float: inline-start;
     resize: horizontal;
     width:  25%;
     font-size: 30px;
 }
-.e, .s, .id, .n{
+.e, .s, .id, .n{ /*las listas que creamos en java script*/
     border: 3px ridge;
     margin: auto;
     font-size: 20px;
@@ -93,12 +93,12 @@ footer{
 .e{
     color: tomato;
 }
-p, h2{
+p, h2{ /*titulos y subtitulos*/
     color:blueviolet;
 }
-article{
+article{   /*articulos*/
     background-color: black;
 }
-.links{
+.links{     /*links de css y html5*/
     text-align: end;
 }

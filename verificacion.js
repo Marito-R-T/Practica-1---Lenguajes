@@ -1,5 +1,5 @@
-const palabra = document.getElementById("palabra");
-const listado_id = document.getElementById("listado_id");
+const palabra = document.getElementById("palabra"); //ingresa la palabra que el usuario ingreso en el input
+const listado_id = document.getElementById("listado_id"); // son todas las listas que van a formar parte del trabajo
 const listado_numeros = document.getElementById("listado_numeros");
 const listado_simbolos = document.getElementById("listado_simbolos");
 const listado_errores = document.getElementById("listado_errores");
@@ -8,10 +8,10 @@ const letras = "abcdefghijklmnñopqrstuvwxyz";
 const simbolos = "#$%";
 var no;
 
-function verificar() {
+function verificar() {    //verifica la primer letra de la palabra
   console.log(palabra.value);
   no = palabra.value.length;
-  console.log(no);
+  console.log(no);          
   if (numeros.indexOf(palabra.value[0]) != -1) {
     validarNumero();
   } else if (letras.indexOf(palabra.value[0].toLowerCase()) != -1) {
@@ -22,7 +22,7 @@ function verificar() {
     lanzar_Error();
   }
 
-  function validarNumero() {
+  function validarNumero() {  //validamos si empieza en numero, y si cumple con todos los requisitos de numero
     var valido = true;
     for (var i = 0; i < palabra.value.length; i++) {
       if (numeros.indexOf(palabra.value[i]) == -1) {
@@ -37,7 +37,7 @@ function verificar() {
       console.log("es un numero");
     }
   }
-  function validarID() {
+  function validarID() {    //validamos si empieza en letra, asi verifiquemos que cumpla los requisitos pertinentes
     var valido = true;
     for (var i = 0; i < palabra.value.length; i++) {
       if (
@@ -55,7 +55,7 @@ function verificar() {
       console.log("es un ID");
     }
   }
-  function validarSimbolos() {
+  function validarSimbolos() {  //validamos si empieza en simbolo, que siga siendo simbolo
     var valido = true;
     for (var i = 0; i < palabra.value.length; i++) {
       if (simbolos.indexOf(palabra.value[i]) == -1) {
@@ -70,7 +70,7 @@ function verificar() {
       console.log("son simbolos");
     }
   }
-  function lanzar_Error() {
+  function lanzar_Error() {       //mandamos todos los errores
     listado_errores.innerHTML =
       listado_errores.innerHTML + '<li class="e">' + palabra.value + "</li>";
     console.log("ERROR");
